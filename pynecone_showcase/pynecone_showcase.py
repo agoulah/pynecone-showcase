@@ -205,7 +205,9 @@ def data_display():
         ),
         case(
             "DataTable",
-            pc.data_table(data=[[1, 2], ["A", "B"]], sort=True),
+            pc.data_table(
+                data=[[1, 2], ["A", "B"]], columns=["number", "letter"], sort=True
+            ),
         ),
         case(
             "List",
