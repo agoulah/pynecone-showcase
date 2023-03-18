@@ -292,11 +292,11 @@ def media():
         case(
             "Icon",
             pc.hstack(
-                pc.icon(tag="MoonIcon"),
-                pc.icon(tag="AddIcon"),
-                pc.icon(tag="SunIcon"),
-                pc.icon(tag="ArrowForwardIcon"),
-                pc.icon(tag="StarIcon"),
+                pc.icon(tag="moon"),
+                pc.icon(tag="add"),
+                pc.icon(tag="sun"),
+                pc.icon(tag="arrow_forward"),
+                pc.icon(tag="star"),
             ),
         ),
     )
@@ -341,7 +341,7 @@ def overlay():
         case(
             "Menu",
             pc.menu(
-                button=pc.icon(tag="HamburgerIcon"),
+                button=pc.icon(tag="hamburger"),
                 items=[
                     pc.menu_item("Menu Item 1"),
                     pc.menu_item("Menu Item 2"),
@@ -443,7 +443,7 @@ def frame(body):
         pc.vstack(
             pc.hstack(
                 pc.heading(title, margin="15px"),
-                pc.icon(tag="SunIcon", on_click=pc.toggle_color_mode),
+                pc.icon(tag="sun", on_click=pc.toggle_color_mode),
             ),
             body,
         ),
@@ -458,7 +458,7 @@ def index():
 def index2():
     return frame(
         pc.vstack(
-            pc.hstack(pc.link(pc.icon(tag="ArrowLeftIcon"), "Return", href="/")),
+            pc.hstack(pc.link(pc.icon(tag="arrow_left"), "Return", href="/")),
             pc.text(
                 "You can change the parameters in the url, they will show up on the page"
             ),
